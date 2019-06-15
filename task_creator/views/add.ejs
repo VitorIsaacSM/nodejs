@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .form-control {
+                margin: 1rem 0;
+            }
+
+            .form-control label,
+            .form-control input,
+            .form-control textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.25rem;
+            }
+
+            .form-control input,
+            .form-control textarea {
+                border: 1px solid #a1a1a1;
+                font: inherit;
+                border-radius: 2px;
+            }
+
+            .form-control input:focus,
+            .form-control textarea:focus {
+                outline-color: #00695c;
+            }
+
+            .product-form {
+                width: 40rem;
+                max-width: 90%;
+                margin: right;
+                display: block;
+            }
+
+            .product-item {
+                width: 20rem;
+                max-width: 95%;
+                margin: 1rem;
+            }
+
+            .product__title {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .product__price {
+                text-align: center;
+                color: #4d4d4d;
+                margin-bottom: 0.5rem;
+            }
+
+            .product__description {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Add a task</h1>
+            <form class="product-form" action="/add" method="POST">
+                <div class="form-control">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" value="">
+                    </div>
+                    <div class="form-control">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" rows="5"></textarea>
+                    </div>
+                    <div class="form-control">
+                            <label for="title">Limite</label>
+                            <input type="date" name="date" id="date" value="">
+                    </div>
+                    <button type="submit">Create Task</button>
+            </form>
+            
+        </main>
+    </body>
+
+
+
+
+
+</html>
